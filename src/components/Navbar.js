@@ -24,7 +24,7 @@ export default function Navbar(props) {
                             <ul className="dropdown-menu">
                                 <li><a className="dropdown-item" href="#">First</a></li>
                                 <li><a className="dropdown-item" href="#">Second</a></li>
-                                <li><hr classNamename="dropdown-divider" /></li>
+                                <li><hr className="dropdown-divider" /></li>
                                 <li><a className="dropdown-item" href="#">Others</a></li>
                             </ul>
                         </li>
@@ -39,14 +39,14 @@ export default function Navbar(props) {
     )
 }
 
-Navbar.propTypes={
-    title:PropTypes.string.isRequired,
-    about:PropTypes.string.isRequired,
-    home:PropTypes.string.isRequired
+Navbar.propTypes = {
+    title: PropTypes.string.isRequired,
+    about: PropTypes.string.isRequired,
+    home: PropTypes.string.isRequired
 }
 
-Navbar.defaultProps={
-    title:"set the title",
-    about:"About",
-    home:"set home"
+Navbar.defaultProps = {
+    title: "set the title",
+    about: "About",
+    home: "set home"
 }
