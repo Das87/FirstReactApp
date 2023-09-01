@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function TextBox() {
+export default function Textbox() {
     return (
         <div className="mb-3">
             <label for="myBox" className="form-label">Example textarea</label>

@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import Navbar from './components/Navbar';
 import Carousal from './components/Carousal';
-import TextBox from './components/TextBox';
+import Textbox from './components/Textbox';
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
         <Navbar title="Das" home="Home"/>
         <Carousal/>
         <div className="container my-3">
-          <TextBox/>
+          <Textbox/>
         </div>
       </>
     </div>
