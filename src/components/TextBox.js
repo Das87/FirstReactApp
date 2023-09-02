@@ -40,6 +40,16 @@ export default function Textbox() {
         setText(result);
     }
 
+    const copy=()=> {            
+         // Copy the text inside the text field
+        navigator.clipboard.writeText(text);
+      }
+      
+    const clickBtnClear=()=>{
+        let cleared="";
+        setText(cleared);
+    }
+
 
     const onUpdate = (event) => {
         // console.log("changed");
@@ -57,7 +67,8 @@ export default function Textbox() {
                     <button className="btn btn-primary my-2 mx-1" onClick={clickBtnUpper} type="submit">Convert to <b>UPPERCASE</b></button>
                     <button className="btn btn-success my-2 mx-1" onClick={clickBtnLower} type="submit">Convert to <b>LOWERCASE</b></button>
                     <button className="btn btn-secondary my-2 mx-1" onClick={clickBtnProper} type="submit">Convert to <b>Proper</b></button>
-
+                    <button className="btn btn-light my-2 mx-1" onClick={copy} type="submit"><b>Copy</b></button>
+                    <button className="btn btn-danger my-2 mx-1" onClick={clickBtnClear} type="submit"><b>Clear</b></button>
                 </div>
             </div>
 
